@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign Up Form</title>
 </head>
+
 <body>
-    
+    <section class="side">
+        <header><span id="logo"></span><span id="heading">
+                <h1>Bookers Club</h1>
+            </span></header>
+
+    </section>
+    <section class="main">
+        <section>
+            <h2>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up now to get started.</h2>
+            <h2>You know you want to.</h2>
+        </section>
+        <section>
+             <h3>All fields are mandatory!</h3>
+            <form action="" id="form-input">
+                <div class="input-container">
+                    <label for="first-name">
+                        <p class="placeholder">First Name</p>
+                        <input required id="first-name" type="text">
+                    </label>
+                    <label for="last-name">
+                        <p class="placeholder">Last Name</p>
+                        <input required id="last-name" type="text">
+                    </label>
+                    <label for="email">
+                        <p class="placeholder">Email</p>
+                        <input id="email" required type="email">
+                    </label>
+                    <label for="phone">
+                        <p class="placeholder">Phone Number</p>
+                        <input id="phone" required type="tel">
+                    </label>
+                    <label for="pass">
+                        <p class="placeholder">Password</p>
+                        <input id="pass" required type="password">
+                    </label>
+                    <label for="con-pass">
+                        <p class="placeholder">Confirm Password</p>
+                        <input id="con-pass" required type="password">
+                    </label>
+                </div>
+                <button>SUBMIT</button>
+            </form>
+        </section>
+        <section class="options">Already have an account? <a href="">Log In</a></section>
+
+    </section>
 </body>
+
 </html>
