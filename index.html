@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="app.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 
 <body>
     <section class="side">
-        <header><span id="logo"></span><span id="heading">
+
+        <header><div class="head-container"><span id="logo"><i class="fa-solid fa-book" style="color: #292829;"></i></span><span id="heading">
                 <h1>Bookers Club</h1>
-            </span></header>
+            </span></div></header>
 
     </section>
     <section class="main">
@@ -22,42 +25,51 @@
             <h2>You know you want to.</h2>
         </section>
         <section class="form-container">
-             <h3>All fields are mandatory!</h3>
+            <h3>All fields are mandatory!</h3>
             <form action="" id="form-input">
-               
-                    <label for="first-name">
-                        
-                        <input required id="first-name" type="text">
-                        <p class="placeholder">First Name</p>
-                    </label>
-                    <label for="last-name">
-                        
-                        <input required id="last-name" type="text">
-                        <p class="placeholder">Last Name</p>
-                    </label>
-                    <label for="email">
-                        
-                        <input id="email" required type="email">
-                        <p class="placeholder">Email</p>
-                    </label>
-                    <label for="phone">
-                      
-                        <input id="phone" required type="tel">
-                        <p class="placeholder">Phone Number</p>
-                    </label>
-                    <label for="pass">
-                        
-                        <input id="pass" required type="password">
-                        <p class="placeholder">Password</p>
-                    </label>
-                    <label for="con-pass">
-                        
-                        <input id="con-pass" required type="password">
-                        <p class="placeholder">Confirm Password</p>
-                    </label>
+
+                <label for="first-name">
+
+                    <input required id="first-name" type="text">
+                    <p class="placeholder">First Name</p>
+                </label>
+                <label for="last-name">
+
+                    <input required id="last-name" type="text">
+                    <p class="placeholder">Last Name</p>
+                </label>
+                <label for="email">
+
+                    <input id="email" required type="email">
+                    <p class="placeholder">Email</p>
+                </label>
+                <label for="phone">
+
+                    <input id="phone" required type="tel">
+                    <p class="placeholder">Phone Number</p>
+                </label>
+                <label for="pass">
+
+                    <input id="pass" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{8,}$" required  type="password">
+                    <p class="placeholder">Password</p>
+                    <div class="popup">
+                        <p>The password must have:</p><ul>
+                        <li>Min. 8 characters</li>
+                        <li>A number</li>
+                        <li>A special character (#,$,* etc)</li>
+                    </ul></div>
+                </label>
+                <label for="con-pass">
+
+                    <input id="con-pass" required type="password">
+                    <p class="placeholder">Confirm Password</p>
+                </label>
             </form>
         </section>
-        <section class="options"><button form="form-input">Create Account</button><div class="log-in-prompt">Already have an account? <a href="">Log In</a></div></section>
+        <section class="options">
+            <button form="form-input">Create Account</button>
+            <div class="log-in-prompt">Already have an account? <a href="">Log In</a></div>
+        </section>
 
     </section>
 </body>
